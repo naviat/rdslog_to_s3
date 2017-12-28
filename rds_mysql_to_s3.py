@@ -1,5 +1,5 @@
 # 
-# Copyright 2015 Ryan Holland
+# Copyright 2017 Hai Dam
 #
 # Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License.
 #
@@ -88,13 +88,3 @@ def lambda_handler(event, context):
 		return "Error writting object to S3 bucket, S3 ClientError: " + e.response['Error']['Message']
 	print("Wrote new Last Written Marker to %s in Bucket %s" % (lastRecievedFile,S3BucketName))
 	return "Log file export complete"
-
-
-
-
-
-
-
-
-
-
